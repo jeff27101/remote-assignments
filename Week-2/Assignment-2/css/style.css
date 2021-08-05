@@ -1,0 +1,143 @@
+.item {
+   list-style-type: none;
+   float: right;
+   margin: 0 auto;
+   font-size: 12px;
+}
+
+.item li {
+    float: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+ }
+
+ .logo {
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 12px;
+ }
+
+ .navigator {
+    padding: 5px;
+    background-color:rgb(207, 203, 203);
+    height: 20px;
+ }
+
+ .welcome {
+     background-color: rgb(168, 190, 219);
+     text-align: center;
+     margin: 0 auto;
+     padding-top: 60px;
+     width: 100%;
+     height: 100px;
+ }
+
+ .section-title {
+     text-align: center;
+ }
+
+ .container {
+    width: 720px;
+    height: 220px;
+    border: 1px;
+    margin: auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+ }
+
+ #blk1{
+    width: 350px;
+    height: 100px;
+    background:rgb(106, 117, 117);
+    margin: 5px;
+    float: left;
+    text-align: center;
+}
+#blk2{
+    width: 350px;
+    height: 100px;
+    background: rgb(106, 117, 117);
+    margin: 5px;
+    float: right;
+    text-align: center;   	
+}
+#blk3{
+    width: 350px;
+    height: 100px;
+    background: rgb(106, 117, 117);
+    margin: 5px;
+    float: left;
+    clear: left;
+    text-align: center;
+}
+#blk4{
+    width: 350px;
+    height: 100px;
+    background: rgb(106, 117, 117);
+    margin: 5px;
+    float:right;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    padding: 10px;
+}
+
+.button1 {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    background: rgb(168, 190, 219);
+    padding: 10px;
+}
+
+.container-hidde {
+    width: 720px;
+    height: 220px;
+    border: 1px;
+    margin: auto;
+    display: none;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+ }
+
+ #blk5{
+    width: 350px;
+    height: 100px;
+    background:rgb(106, 117, 117);
+    margin: 5px;
+    float: left;
+    text-align: center;
+    /* display: none; */
+}
+#blk6{
+    width: 350px;
+    height: 100px;
+    background: rgb(106, 117, 117);
+    margin: 5px;
+    float: right;
+    text-align: center;   	
+}
+#blk7{
+    width: 350px;
+    height: 100px;
+    background: rgb(106, 117, 117);
+    margin: 5px;
+    float: left;
+    clear: left;
+    text-align: center;
+}
+#blk8{
+    width: 350px;
+    height: 100px;
+    background: rgb(106, 117, 117);
+    margin: 5px;
+    float:right;
+    text-align: center;
+}
