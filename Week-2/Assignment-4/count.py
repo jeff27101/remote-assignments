@@ -1,8 +1,8 @@
 
-def count(number):
-    result = {key:0 for key in sorted(set(number))}
-    for i in number:
-        result[i] += 1
+def count(input_list):
+    result = {}
+    for e in input_list:
+        result[e] = result.get(e,0)+1
     return result               
 
 num = ['a', 'b', 'c', 'a', 'c', 'a', 'x']
