@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Get Sum!!!</title>
+        <script type="text/javascript">
+            function do_ajax(){
+                var req = new XMLHttpRequest();
+                var result = document.getElementById('result');
+                req.onreadystatechange = function()
+                {
+                    if(this.readyState == 4 && this.status == 200) {
+                        result.innerHTML = this.responseText;
+                    } else {
+                        result.innerHTML = "handling...";
+                    }
+                }
+            req.open('POST', '/data', true);
+            req.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
+            req.send("number=" + document.getElementById('number').value);
+            }
+
+            // function get_ajax(){
+            //     var req = new XMLHttpRequest();
+            //     var result = document.getElementById('result');
+            //     var number = document.getElementById('number');
+            //     req.onreadystatechange = function()
+            //     {
+            //         if(this.readyState == 4 && this.status == 200) {
+            //             result.innerHTML = this.responseText;
+            //         } else {
+            //             result.innerHTML = "handling...";
+            //         }
+            //     }
+            // req.open('GET', '/data', true);
+            // req.send();
+            // }
+        </script>
+    </head>
+    <body>
+        <h1>Hello There!! Welcome to the Sum Page</h1>
+        <!-- <form action="data" method="get">
+            <div class= 'sum'>
+                <h3>Calculate the 1+2+3+...N</h3>
+                <input id='number' placeholder="Please Enter Number 'N'">
+                <button type="button" id="btn-post" onclick="get_ajax();">Send the N</button>
+                <div id="result"></div>
+            </div>
+        </form> -->
+
+        <form action="data" method="post">
+            <h3>Calculate the 1+2+3+...N</h3>
+            <label>Number:<input type="text" id="number" value="" /></label>
+            <button type="button" id="btn-post" onclick="do_ajax();">Click</button>
+            <div id="result"></div>
+        </form>
+
+    </body>
+</html>
