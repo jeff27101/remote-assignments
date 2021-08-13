@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hi! Im Adrian"
+    return render_template('index.html')
 
 @app.route('/data', methods=['GET', 'POST'])
 def data(number=None):
