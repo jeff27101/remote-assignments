@@ -7,9 +7,18 @@ from flask.wrappers import Request
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return "Hello World!!!! I am Adrian"
+    #return "Hello World!!!! I am Adrian"
+    return """
+        <!doctype html>
+        <html>
+        <head><title>Index Page</title></head>
+        <body>
+        <h1>Hello World!!!! I am Adrian</h1>
+        </body>
+        </html>
+        """
 
 @app.route('/data', methods=['GET', 'POST'])
 def data(number=None):
